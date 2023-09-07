@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RealidadAumentada</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_home">Vista principal</string>
+    <string name="title_credit_card">Tarjeta de crédito</string>
+    <string name="title_notifications">Notificaciones </string>
+    <string name="all">TODO</string>
+    <string name="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quas illo eaque maiores reprehenderit, molestiae aliquid reiciendis natus.</string>
+    <string name="subtitle">Lorem ipsum dolor sit consectur.</string>
+</resources>

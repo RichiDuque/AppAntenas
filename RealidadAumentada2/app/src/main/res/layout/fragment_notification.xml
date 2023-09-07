@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/fondo_antenas" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAjustes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:backgroundTint="#B2B6C5"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajustes"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/btnReferencias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Referencias"
+                android:textColor="@color/white"
+                android:padding="20dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/Azul"
+                android:background="@drawable/button_custom"
+                android:layout_below="@+id/textTitle"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/btnCerrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cerrar Sesión"
+                android:textColor="@color/white"
+                android:padding="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="70dp"
+                android:backgroundTint="@color/Azul"
+                android:background="@drawable/button_custom"
+                android:layout_below="@id/btnReferencias"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

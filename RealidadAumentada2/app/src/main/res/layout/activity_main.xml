@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AUGMENTED"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:shadowColor="@color/black"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/title2"/>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REALITY"
+        android:textSize="50dp"
+        android:textColor="#00FFE1"
+        android:shadowColor="@color/black"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/imgInicio"
+        android:layout_marginBottom="120px"/>
+
+    <ImageView
+        android:id="@+id/imgInicio"
+        android:layout_width="500px"
+        android:layout_height="650px"
+        app:srcCompat="@drawable/logo_app2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/btnComenzar"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgInicio"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Azul"
+        android:layout_marginTop="20px"
+        android:background="@drawable/button_custom"
+        android:text="Comenzar"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

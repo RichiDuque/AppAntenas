@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/txtBienvenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Bienvenido!"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:id="@+id/txtDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Llena tus datos para poder ingresar."
+            android:textColor="@color/black"
+            android:layout_below="@id/txtBienvenido"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"/>
+
+        <EditText
+            android:id="@+id/editUsario"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Correo"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/txtDetail"/>
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Contraseña"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/editUsario"/>
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/Azul"
+            android:background="@drawable/button_custom"
+            android:layout_below="@id/editPassword"/>
+
+        <TextView
+            android:id="@+id/textCrear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear Cuenta"
+            android:layout_below="@id/btnIngresar"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="18dp"
+            android:textColor="#4CA6A8"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

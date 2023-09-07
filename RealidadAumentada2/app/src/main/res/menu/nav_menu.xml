@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_modulos"
+        android:icon="@drawable/ic_home"
+        android:title="Modulos" />
+
+    <item
+        android:id="@+id/navigation_calificaciones"
+        android:icon="@drawable/ic_notas"
+        android:title="Calificaciones" />
+
+    <item
+        android:id="@+id/navigation_configuracion"
+        android:icon="@drawable/ajustes"
+        android:title="Ajustes" />
+
+</menu>
