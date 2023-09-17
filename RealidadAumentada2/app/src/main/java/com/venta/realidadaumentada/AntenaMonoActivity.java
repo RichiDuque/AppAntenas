@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentOnAttachListener;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.widget.Button;
@@ -32,7 +31,7 @@ import com.google.ar.sceneform.ux.TransformableNode;
 
 import java.lang.ref.WeakReference;
 
-public class AntenaConcepActivity extends AppCompatActivity implements
+public class AntenaMonoActivity extends AppCompatActivity implements
         FragmentOnAttachListener,
         BaseArFragment.OnTapArPlaneListener,
         BaseArFragment.OnSessionConfigurationListener,
@@ -46,12 +45,9 @@ public class AntenaConcepActivity extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_antena_concep);
-
-        setContentView(R.layout.activity_antena_concep);
+        setContentView(R.layout.activity_antena_mono);
 
         btnAntena = findViewById(R.id.buttonAntena);
-        btnAntena2 = findViewById(R.id.buttonAntena2);
 
         getSupportFragmentManager().addFragmentOnAttachListener(this);
 
@@ -65,10 +61,6 @@ public class AntenaConcepActivity extends AppCompatActivity implements
 
         btnAntena.setOnClickListener(view -> {
             loadModels();
-        });
-        btnAntena2.setOnClickListener(view -> {
-            loadModels2();
-            loadModels2();
         });
     }
     @Override
@@ -102,14 +94,14 @@ public class AntenaConcepActivity extends AppCompatActivity implements
     }
 
     public void loadModels() {
-        WeakReference<AntenaConcepActivity> weakActivity = new WeakReference<>(this);
+        WeakReference<AntenaMonoActivity> weakActivity = new WeakReference<>(this);
         ModelRenderable.builder()
                 .setSource(this, R.raw.antenaprueba)
                 .setIsFilamentGltf(true)
                 .setAsyncLoadEnabled(true)
                 .build()
                 .thenAccept(model -> {
-                    AntenaConcepActivity activity = weakActivity.get();
+                    AntenaMonoActivity activity = weakActivity.get();
                     if (activity != null) {
                         activity.model = model;
                     }
@@ -123,7 +115,7 @@ public class AntenaConcepActivity extends AppCompatActivity implements
                 .setView(this, R.layout.view_model_title)
                 .build()
                 .thenAccept(viewRenderable -> {
-                    AntenaConcepActivity activity = weakActivity.get();
+                    AntenaMonoActivity activity = weakActivity.get();
                     if (activity != null) {
                         activity.viewRenderable = viewRenderable;
                     }
@@ -135,14 +127,14 @@ public class AntenaConcepActivity extends AppCompatActivity implements
     }
 
     public void loadModels2() {
-        WeakReference<AntenaConcepActivity> weakActivity = new WeakReference<>(this);
+        WeakReference<AntenaMonoActivity> weakActivity = new WeakReference<>(this);
         ModelRenderable.builder()
                 .setSource(this, R.raw.rusted_antennas)
                 .setIsFilamentGltf(true)
                 .setAsyncLoadEnabled(true)
                 .build()
                 .thenAccept(model -> {
-                    AntenaConcepActivity activity = weakActivity.get();
+                    AntenaMonoActivity activity = weakActivity.get();
                     if (activity != null) {
                         activity.model = model;
                     }
@@ -156,7 +148,7 @@ public class AntenaConcepActivity extends AppCompatActivity implements
                 .setView(this, R.layout.view_model_title)
                 .build()
                 .thenAccept(viewRenderable -> {
-                    AntenaConcepActivity activity = weakActivity.get();
+                    AntenaMonoActivity activity = weakActivity.get();
                     if (activity != null) {
                         activity.viewRenderable = viewRenderable;
                     }

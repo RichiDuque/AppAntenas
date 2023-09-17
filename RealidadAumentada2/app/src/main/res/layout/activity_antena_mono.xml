@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AntenaConcepActivity">
+    tools:context=".AntenaMonoActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/arFragment"
@@ -20,21 +20,12 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Torre"
+            android:text="Monopolo"
             android:layout_marginRight="20dp"
             android:textColor="@color/white"
             android:backgroundTint="@color/Azul"
             android:background="@drawable/button_custom"/>
 
-        <Button
-            android:id="@+id/buttonAntena2"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Varias"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/Azul"
-            android:background="@drawable/button_custom"/>
     </LinearLayout>
 
 </RelativeLayout>

@@ -22,7 +22,7 @@ public class RegisterActivity extends AppCompatActivity {
         textIngresar = findViewById(R.id.textIngresar);
 
         btnCrear.setOnClickListener(view -> {
-            Intent intent = new Intent(this, AntenasActivity.class);
+            Intent intent = new Intent(this, FragmentsActivity.class);
             startActivity(intent);
         });
 

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EvaConcepActivity"
+    android:background="#DBF0F1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Evaluación conceptos basicos"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textPregunta1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textTitle"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="1. ¿Cuál es la función principal de una antena en un sistema de comunicación inalámbrica?"
+                        android:textColor="@color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/GroupPregunta1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPregunta1">
+
+                        <RadioButton
+                            android:id="@+id/rButtonA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Transmitir señales eléctricas" />
+
+                        <RadioButton
+                            android:id="@+id/rButtonB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Convertir señales eléctricas en ondas electromagnéticas y viceversa" />
+
+                        <RadioButton
+                            android:id="@+id/rButtonC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Amplificar las señales de radio" />
+
+                        <RadioButton
+                            android:id="@+id/rButtonD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Conectar dispositivos electrónicos" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textPregunta2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/GroupPregunta1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="2. ¿Qué es la radiación electromagnética y por qué es importante en la transmisión de señales?"
+                        android:textColor="@color/black"/>
+
+                    <RadioGroup
+                        android:id="@+id/GroupPregunta2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPregunta2">
+
+                        <RadioButton
+                            android:id="@+id/rButtonA2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Un tipo de radiación solar que afecta a las antenas" />
+
+                        <RadioButton
+                            android:id="@+id/rButtonB2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="La propagación de señales a través de cables" />
+
+                        <RadioButton
+                            android:id="@+id/rButtonC2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ondas electromagnéticas que transportan información sin cables" />
+
+                        <RadioButton
+                            android:id="@+id/rButtonD2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="La transmisión de datos a través de fibra óptica" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textPregunta3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/GroupPregunta2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="3. ¿Cuál es el proceso que ocurre cuando una onda electromagnética incide sobre una antena?"
+                        android:textColor="@color/black"/>
+
+                    <RadioGroup
+                        android:id="@+id/GroupPregunta3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPregunta3">
+
+                        <RadioButton
+                            android:id="@+id/rButtonA3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" La antena amplifica la señal"/>
+
+                        <RadioButton
+                            android:id="@+id/rButtonB3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="La antena convierte la señal en una señal digital"/>
+
+                        <RadioButton
+                            android:id="@+id/rButtonC3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="La antena induce una corriente eléctrica en su estructura"/>
+
+                        <RadioButton
+                            android:id="@+id/rButtonD3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" La antena bloquea la señal"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textPregunta4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/GroupPregunta3"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="4. ¿Cuál de las siguientes afirmaciones es cierta sobre las antenas?"
+                        android:textColor="@color/black"/>
+
+                    <RadioGroup
+                        android:id="@+id/GroupPregunta4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPregunta4">
+
+                        <RadioButton
+                            android:id="@+id/rButtonA4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" Las antenas no son necesarias en las comunicaciones inalámbricas"/>
+
+                        <RadioButton
+                            android:id="@+id/rButtonB4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Las antenas solo transmiten, no reciben señales"/>
+
+                        <RadioButton
+                            android:id="@+id/rButtonC4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Las antenas permiten la transmisión y recepción de señales electromagnéticas"/>
+
+                        <RadioButton
+                            android:id="@+id/rButtonD4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" Las antenas solo funcionan en ambientes urbanos"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textPregunta5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/GroupPregunta4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="5. ¿Por qué la comprensión de la interacción entre las ondas electromagnéticas y las antenas es importante?"
+                        android:textColor="@color/black"/>
+
+                    <RadioGroup
+                        android:id="@+id/GroupPregunta5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPregunta5">
+
+                        <RadioButton
+                            android:id="@+id/rButtonA5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="No es importante, ya que las antenas siempre funcionan correctamente"/>
+
+                        <RadioButton
+                            android:id="@+id/rButtonB5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" Para diseñar antenas que sean estéticamente atractivas"/>
+
+                        <RadioButton
+                            android:id="@+id/rButtonC5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Para diseñar antenas eficientes y sistemas de comunicación confiables"/>
+
+                        <RadioButton
+                            android:id="@+id/rButtonD5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Solo es importante para los ingenieros de antenas"/>
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btnFin"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Finalizar"
+                        android:backgroundTint="@color/Azul"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/button_custom"
+                        android:layout_below="@id/GroupPregunta5"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
