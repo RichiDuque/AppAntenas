@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".conceptos.PanelActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F1E7F5">
+
+            <ImageView
+                android:id="@+id/imageAntenas"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/antenas" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="5dp"
+                android:backgroundTint="#39888E">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textIntroMono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Antenas Monopolo" />
+
+                    <TextView
+                        android:id="@+id/textIntroMono2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="Las antenas monopolo son un tipo común de antenas utilizadas en una variedad de aplicaciones de comunicación. Aquí hay una descripción de sus características y funcionamiento:" />
+
+                    <TextView
+                        android:id="@+id/textIntroMono3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Definición y Características Principales" />
+
+                    <TextView
+                        android:id="@+id/textIntroMono4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="Una antena monopolo es un tipo de antena simple y comúnmente utilizada que consta de un solo elemento conductor vertical.
+\nTiene una estructura sencilla, que generalmente consiste en un poste o elemento vertical y un plano de tierra.
+\nLa parte superior del monopolo se conecta al equipo de transmisión o recepción, mientras que la base se conecta a un plano de tierra, que puede ser tierra física o un plano de tierra artificial.
+\nLas antenas monopolo son omnidireccionales, lo que significa que irradian señales en todas las direcciones horizontalmente.
+\nSon eficientes y ampliamente utilizadas en aplicaciones móviles y sistemas de comunicación debido a su simplicidad y rendimiento satisfactorio." />
+
+                    <TextView
+                        android:id="@+id/textIntroMono5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Principio de Funcionamiento" />
+
+                    <TextView
+                        android:id="@+id/textIntroMono6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="El principio de funcionamiento de una antena monopolo se basa en la radiación de un elemento conductor vertical cuando se le aplica una señal eléctrica alterna.
+\nCuando se aplica una corriente eléctrica a la parte superior del monopolo, se genera un campo electromagnético alrededor de él.
+\nEste campo electromagnético emite ondas electromagnéticas que se propagan por el espacio, lo que permite la transmisión de señales.
+\nCuando las ondas electromagnéticas llegan a la antena, la corriente generada en el monopolo es proporcional a la intensidad de la señal recibida."/>
+
+                    <TextView
+                        android:id="@+id/textIntroMono7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Longitud del Monopolo y Frecuencia de Operación"/>
+
+                    <TextView
+                        android:id="@+id/textIntroMono8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="La longitud del monopolo está relacionada directamente con la frecuencia de operación de la antena.
+\nPara que la antena sea eficiente, su longitud debe ser aproximadamente igual a una cuarta parte de la longitud de onda de la señal que se desea transmitir o recibir.
+\nLas antenas monopolo suelen ser más cortas que las antenas dipolo (que tienen dos elementos conductores) y son adecuadas para operar en frecuencias más altas."/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnAntenaPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/logod"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"/>
+                <Button
+                    android:id="@+id/btnEvaPanel"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Evaluación"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_custom"
+                    android:backgroundTint="#39888E"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

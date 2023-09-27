@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.venta.realidadaumentada.AntenaConcepActivity;
-import com.venta.realidadaumentada.EvaConcepActivity;
+import com.venta.realidadaumentada.antenas.AntenaConcepActivity;
+import com.venta.realidadaumentada.cuestionarios.EvaConcepActivity;
 import com.venta.realidadaumentada.R;
 
 public class ConceptosActivity extends AppCompatActivity {

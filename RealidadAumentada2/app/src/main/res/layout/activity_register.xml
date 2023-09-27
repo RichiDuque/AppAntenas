@@ -16,7 +16,7 @@
             android:id="@+id/txtBienvenido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registrar Cuenta"
+            android:text="Nombre Usuario"
             android:fontFamily="sans-serif-condensed"
             android:textStyle="bold"
             android:textSize="40dp"
@@ -28,7 +28,7 @@
             android:id="@+id/txtDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Llena tus datos para crear tu cuenta."
+            android:text="Ingrese su nombre de usuario"
             android:textColor="@color/black"
             android:layout_below="@id/txtBienvenido"
             android:fontFamily="sans-serif-condensed"
@@ -48,53 +48,17 @@
             android:layout_marginTop="30dp"
             android:layout_below="@id/txtDetail"/>
 
-        <EditText
-            android:id="@+id/editCorreo"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:hint="Correo"
-            android:singleLine="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:layout_below="@id/editUsario"/>
-
-        <EditText
-            android:id="@+id/editPassword"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:hint="Contraseña"
-            android:singleLine="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:layout_below="@id/editCorreo"/>
-
         <Button
             android:id="@+id/btnCrear"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Crear"
+            android:text="Ingresar"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
             android:textColor="@color/white"
             android:backgroundTint="@color/Azul"
             android:background="@drawable/button_custom"
-            android:layout_below="@id/editPassword"/>
-
-        <TextView
-            android:id="@+id/textIngresar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¿Ya tienes una cuenta? Ingresa"
-            android:layout_below="@id/btnCrear"
-            android:layout_marginTop="40dp"
-            android:fontFamily="sans-serif-condensed"
-            android:textSize="18dp"
-            android:textColor="#4CA6A8"
-            android:layout_centerHorizontal="true"/>
+            android:layout_below="@id/editUsario"/>
 
     </RelativeLayout>
 </RelativeLayout>

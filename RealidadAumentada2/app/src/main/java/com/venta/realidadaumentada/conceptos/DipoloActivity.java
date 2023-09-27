@@ -7,11 +7,11 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.venta.realidadaumentada.antenas.AntenaMonoActivity;
 import com.venta.realidadaumentada.R;
+import com.venta.realidadaumentada.cuestionarios.EvaDipoActivity;
 import com.venta.realidadaumentada.cuestionarios.EvaMonoActivity;
 
-public class MonoPoloActivity extends AppCompatActivity {
+public class DipoloActivity extends AppCompatActivity {
 
     Button btnEval;
     FloatingActionButton btnAntena;
@@ -19,18 +19,14 @@ public class MonoPoloActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mono_polo);
+        setContentView(R.layout.activity_dipolo);
 
-        btnEval = findViewById(R.id.btnEvaMono);
-        btnAntena = findViewById(R.id.btnAntenaMono);
+        btnEval = findViewById(R.id.btnEvaDipo);
+        btnAntena = findViewById(R.id.btnAntenaDipo);
 
         btnEval.setOnClickListener(view -> {
             finish();
-            Intent intent = new Intent(this, EvaMonoActivity.class);
-            startActivity(intent);
-        });
-        btnAntena.setOnClickListener(view -> {
-            Intent intent = new Intent(this, AntenaMonoActivity.class);
+            Intent intent = new Intent(this, EvaDipoActivity.class);
             startActivity(intent);
         });
     }

@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.venta.realidadaumentada.fragments.HomeFragment"
-        tools:layout="@layout/activity_antenas" />
+        tools:layout="@layout/activity_register" />
 
     <fragment
         android:id="@+id/navigation_credit_card"

@@ -20,7 +20,35 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".AntenaMonoActivity"
+            android:name=".EvaPanelActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".EvaDipoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PanelActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DipoloActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".antenas.AntenaMonoActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -41,14 +69,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".EvaConcepActivity"
+            android:name=".cuestionarios.EvaConcepActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".AntenaConcepActivity"
+            android:name=".antenas.AntenaConcepActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
