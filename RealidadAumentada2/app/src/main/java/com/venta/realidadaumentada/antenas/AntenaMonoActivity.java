@@ -190,5 +190,4 @@ public class AntenaMonoActivity extends AppCompatActivity implements
         titleNode.setRenderable(viewRenderable);
         titleNode.setEnabled(false);
     }
-
 }
