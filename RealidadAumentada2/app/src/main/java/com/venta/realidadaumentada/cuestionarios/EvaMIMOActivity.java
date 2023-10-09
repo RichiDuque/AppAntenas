@@ -6,40 +6,37 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.venta.realidadaumentada.FragmentsActivity;
-import com.venta.realidadaumentada.LoginActivity;
 import com.venta.realidadaumentada.R;
 
-public class EvaConcepActivity extends AppCompatActivity {
+public class EvaMIMOActivity extends AppCompatActivity {
 
-    Button btnFinal;
-    RadioGroup groupPregunta1, groupPregunta2, groupPregunta3, groupPregunta4, groupPregunta5;
+    Button btnFinalMIMO;
+    RadioGroup groupPregunta1MIMO, groupPregunta2MIMO, groupPregunta3MIMO, groupPregunta4MIMO, groupPregunta5MIMO;
     SharedPreferences sharedPreferences; // SharedPreferences para guardar la nota
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_eva_concep);
+        setContentView(R.layout.activity_eva_mimo);
 
-        btnFinal = findViewById(R.id.btnFin);
-        groupPregunta1 = findViewById(R.id.GroupPregunta1);
-        groupPregunta2 = findViewById(R.id.GroupPregunta2);
-        groupPregunta3 = findViewById(R.id.GroupPregunta3);
-        groupPregunta4 = findViewById(R.id.GroupPregunta4);
-        groupPregunta5 = findViewById(R.id.GroupPregunta5);
+        btnFinalMIMO = findViewById(R.id.btnFinMIMO);
+        groupPregunta1MIMO = findViewById(R.id.GroupPregunta1MIMO);
+        groupPregunta2MIMO = findViewById(R.id.GroupPregunta2MIMO);
+        groupPregunta3MIMO = findViewById(R.id.GroupPregunta3MIMO);
+        groupPregunta4MIMO = findViewById(R.id.GroupPregunta4MIMO);
+        groupPregunta5MIMO = findViewById(R.id.GroupPregunta5MIMO);
 
         sharedPreferences = getSharedPreferences("Notas", MODE_PRIVATE); // Nombre de SharedPreferences
 
-        btnFinal.setOnClickListener(view -> {
+        btnFinalMIMO.setOnClickListener(view -> {
             int notaTotal = calcularNota();
 
             // Guardar la nota total en SharedPreferences
             SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putInt("nota_Concepto", notaTotal);
+            editor.putInt("nota_AntenaMIMO", notaTotal);
             editor.apply();
 
             finish();
@@ -52,11 +49,11 @@ public class EvaConcepActivity extends AppCompatActivity {
         int nota = 0;
 
         // Comprobar las respuestas seleccionadas y compararlas con las respuestas correctas
-        nota += calcularPregunta(groupPregunta1, R.id.rButtonB);
-        nota += calcularPregunta(groupPregunta2, R.id.rButtonC2);
-        nota += calcularPregunta(groupPregunta3, R.id.rButtonC3);
-        nota += calcularPregunta(groupPregunta4, R.id.rButtonC4);
-        nota += calcularPregunta(groupPregunta5, R.id.rButtonC5);
+        nota += calcularPregunta(groupPregunta1MIMO, R.id.rButtonC1MIMO);
+        nota += calcularPregunta(groupPregunta2MIMO, R.id.rButtonC2MIMO);
+        nota += calcularPregunta(groupPregunta3MIMO, R.id.rButtonC3MIMO);
+        nota += calcularPregunta(groupPregunta4MIMO, R.id.rButtonB4MIMO);
+        nota += calcularPregunta(groupPregunta5MIMO, R.id.rButtonB5MIMO);
 
         return nota;
     }

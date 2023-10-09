@@ -10,14 +10,14 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.venta.realidadaumentada.fragments.CreditCardFragment;
+import com.venta.realidadaumentada.fragments.NotasFragment;
 import com.venta.realidadaumentada.fragments.HomeFragment;
 import com.venta.realidadaumentada.fragments.NotificationFragment;
 
 public class FragmentsActivity extends AppCompatActivity {
 
     HomeFragment firstFragment = new HomeFragment();
-    CreditCardFragment secondFragment = new CreditCardFragment();
+    NotasFragment secondFragment = new NotasFragment();
     NotificationFragment thirdFragment = new NotificationFragment();
     Button btnIntro;
 

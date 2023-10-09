@@ -46,7 +46,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <TextView
-                    android:id="@+id/textTitleIntro"
+                    android:id="@+id/textTitleConcep"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -58,10 +58,10 @@
                     android:textSize="18dp" />
 
                 <TextView
-                    android:id="@+id/textDetailIntro"
+                    android:id="@+id/textDetailConcep"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textTitleIntro"
+                    android:layout_below="@id/textTitleConcep"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_toRightOf="@+id/cardIntroImg"

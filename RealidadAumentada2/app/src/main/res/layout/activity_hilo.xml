@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".conceptos.HiloActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/Azul">
+
+            <ImageView
+                android:id="@+id/imageAntenas"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/antenas" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="5dp"
+                android:backgroundTint="#FFE9A7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textIntroC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Antena de Hilo" />
+
+                    <TextView
+                        android:id="@+id/textIntroC2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="Definición y Características Principales: La antena de hilo es un alambre conductor largo y recto que se utiliza para transmitir o recibir señales electromagnéticas. Suele ser una antena monopolo, lo que significa que consta de un solo elemento conductor. Su longitud se ajusta a la longitud de onda deseada para la frecuencia de operación." />
+
+                    <TextView
+                        android:id="@+id/textIntroC3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Principio de Funcionamiento y Diseño Básico" />
+
+                    <TextView
+                        android:id="@+id/textIntroC4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="Cuando se aplica una corriente eléctrica a un hilo conductor, este genera un campo electromagnético que irradia ondas electromagnéticas. La longitud del hilo se selecciona en función de la longitud de onda de la señal que se va a transmitir o recibir." />
+
+                    <TextView
+                        android:id="@+id/textIntroC5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Aplicaciones Comunes de las Antenas" />
+
+                    <TextView
+                        android:id="@+id/textIntroC6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="Las antenas de hilo se utilizan en una variedad de aplicaciones, como en transmisiones de radio AM, sistemas de comunicación de onda corta, y en algunas aplicaciones militares y de radioaficionados." />
+
+                    <TextView
+                        android:id="@+id/textIntroC7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Ventajas y Limitaciones de las Antenas" />
+
+                    <TextView
+                        android:id="@+id/textIntroC8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Las ventajas incluyen su simplicidad, bajo costo y facilidad de instalación. Sin embargo, son menos eficientes y tienen menos ganancia en comparación con antenas más complejas. La longitud del hilo es crítica y puede limitar su uso en frecuencias muy altas." />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnAntenaHilo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/logod"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"/>
+                <Button
+                    android:id="@+id/btnEvaHilo"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Evaluación"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_custom"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
+    tools:context=".UserActivity">
 
     <RelativeLayout
         android:layout_width="400dp"
@@ -17,7 +16,7 @@
             android:id="@+id/txtBienvenido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¡Bienvenido!"
+            android:text="Nombre Usuario"
             android:fontFamily="sans-serif-condensed"
             android:textStyle="bold"
             android:textSize="40dp"
@@ -29,7 +28,7 @@
             android:id="@+id/txtDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ingresa el codigo de clase"
+            android:text="Ingrese su nombre de usuario"
             android:textColor="@color/black"
             android:layout_below="@id/txtBienvenido"
             android:fontFamily="sans-serif-condensed"
@@ -43,15 +42,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Codigo clase"
+            android:hint="Usuario"
             android:singleLine="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="30dp"
             android:layout_below="@id/txtDetail"/>
 
-
         <Button
-            android:id="@+id/btnIngresar"
+            android:id="@+id/btnCrear"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Ingresar"
@@ -62,17 +60,5 @@
             android:background="@drawable/button_custom"
             android:layout_below="@id/editUsario"/>
 
-        <TextView
-            android:id="@+id/txtDocente"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="¿Eres docente? Ingresa aquí"
-            android:textColor="@color/Azul"
-            android:textSize="16dp"
-            android:layout_below="@id/btnIngresar"
-            android:layout_centerHorizontal="true"/>
-
     </RelativeLayout>
-
 </RelativeLayout>

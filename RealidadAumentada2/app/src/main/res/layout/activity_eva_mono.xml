@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cuestionarios.EvaMonoActivity"
-    android:background="#FFE9A7">
+    android:background="#DBF0F1"
+    tools:context=".cuestionarios.EvaMonoActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -13,253 +13,292 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
 
+            <!-- Pregunta 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="30dp"
-                app:cardCornerRadius="20dp">
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="20dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:padding="10dp">
 
                     <TextView
-                        android:id="@+id/textTitle"
+                        android:id="@+id/textPregunta1Monopolo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:text="Evaluación Antenas Monopolo"
+                        android:text="Pregunta 1: ¿Qué es una antena monopolo?"
                         android:textColor="@color/black"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/textPregunta1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/textTitle"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:text="1. ¿Qué es una antena monopolo?"
-                        android:textColor="@color/black" />
-
                     <RadioGroup
-                        android:id="@+id/GroupPregunta1"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/GroupPregunta1Monopolo"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/textPregunta1">
+                        android:layout_below="@id/textPregunta1Monopolo">
 
                         <RadioButton
-                            android:id="@+id/rButtonA"
+                            android:id="@+id/rButtonA1Monopolo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Una antena con dos elementos conductores paralelos." />
 
                         <RadioButton
-                            android:id="@+id/rButtonB"
+                            android:id="@+id/rButtonB1Monopolo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Una antena con un solo elemento conductor vertical." />
 
                         <RadioButton
-                            android:id="@+id/rButtonC"
+                            android:id="@+id/rButtonC1Monopolo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Una antena que solo puede recibir señales." />
 
                         <RadioButton
-                            android:id="@+id/rButtonD"
+                            android:id="@+id/rButtonD1Monopolo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Una antena que solo puede transmitir señales." />
                     </RadioGroup>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Pregunta 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
 
                     <TextView
-                        android:id="@+id/textPregunta2"
+                        android:id="@+id/textPregunta2Monopolo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/GroupPregunta1"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:text="2. ¿Cuál es una característica clave de las antenas monopolo?"
-                        android:textColor="@color/black"/>
+                        android:text="Pregunta 2: ¿Cuál es una característica clave de las antenas monopolo?"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
 
                     <RadioGroup
-                        android:id="@+id/GroupPregunta2"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/GroupPregunta2Monopolo"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/textPregunta2">
+                        android:layout_below="@id/textPregunta2Monopolo">
 
                         <RadioButton
-                            android:id="@+id/rButtonA2"
+                            android:id="@+id/rButtonA2Monopolo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Son omnidireccionales." />
 
                         <RadioButton
-                            android:id="@+id/rButtonB2"
+                            android:id="@+id/rButtonB2Monopolo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text=" Son adecuadas para operar en frecuencias muy bajas." />
+                            android:text="Son adecuadas para operar en frecuencias muy bajas." />
 
                         <RadioButton
-                            android:id="@+id/rButtonC2"
+                            android:id="@+id/rButtonC2Monopolo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Tienen una estructura compleja." />
 
                         <RadioButton
-                            android:id="@+id/rButtonD2"
+                            android:id="@+id/rButtonD2Monopolo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Solo pueden transmitir señales en una dirección específica." />
                     </RadioGroup>
-
-                    <TextView
-                        android:id="@+id/textPregunta3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/GroupPregunta2"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:text="3. ¿Cómo se relaciona la longitud del monopolo con la frecuencia de operación?"
-                        android:textColor="@color/black"/>
-
-                    <RadioGroup
-                        android:id="@+id/GroupPregunta3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/textPregunta3">
-
-                        <RadioButton
-                            android:id="@+id/rButtonA3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="La longitud del monopolo es independiente de la frecuencia de operación."/>
-
-                        <RadioButton
-                            android:id="@+id/rButtonB3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="La longitud del monopolo debe ser la misma que la longitud de onda de la señal deseada."/>
-
-                        <RadioButton
-                            android:id="@+id/rButtonC3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="La longitud del monopolo debe ser el doble de la longitud de onda de la señal deseada."/>
-
-                        <RadioButton
-                            android:id="@+id/rButtonD3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="La longitud del monopolo debe ser la mitad de la longitud de onda de la señal deseada."/>
-                    </RadioGroup>
-
-                    <TextView
-                        android:id="@+id/textPregunta4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/GroupPregunta3"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:text="4. ¿Dónde se utilizan comúnmente las antenas monopolo?"
-                        android:textColor="@color/black"/>
-
-                    <RadioGroup
-                        android:id="@+id/GroupPregunta4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/textPregunta4">
-
-                        <RadioButton
-                            android:id="@+id/rButtonA4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="En sistemas de comunicación de satélite."/>
-
-                        <RadioButton
-                            android:id="@+id/rButtonB4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="En sistemas de comunicación submarina."/>
-
-                        <RadioButton
-                            android:id="@+id/rButtonC4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="En dispositivos móviles como teléfonos celulares."/>
-
-                        <RadioButton
-                            android:id="@+id/rButtonD4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="En antenas parabólicas de gran tamaño."/>
-                    </RadioGroup>
-
-                    <TextView
-                        android:id="@+id/textPregunta5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/GroupPregunta4"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:text="5. ¿Cuál es una ventaja importante de las antenas monopolo en dispositivos móviles?"
-                        android:textColor="@color/black"/>
-
-                    <RadioGroup
-                        android:id="@+id/GroupPregunta5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/textPregunta5">
-
-                        <RadioButton
-                            android:id="@+id/rButtonA5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Alta ganancia direccional."/>
-
-                        <RadioButton
-                            android:id="@+id/rButtonB5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Baja eficiencia de transmisión."/>
-
-                        <RadioButton
-                            android:id="@+id/rButtonC5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Omnidireccionalidad y tamaño compacto."/>
-
-                        <RadioButton
-                            android:id="@+id/rButtonD5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Uso exclusivo en comunicaciones satelitales."/>
-                    </RadioGroup>
-
-                    <Button
-                        android:id="@+id/btnFinMono"
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:text="Finalizar"
-                        android:backgroundTint="@color/Azul"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/button_custom"
-                        android:layout_below="@id/GroupPregunta5"
-                        android:layout_centerHorizontal="true"/>
                 </RelativeLayout>
-
             </androidx.cardview.widget.CardView>
+
+            <!-- Pregunta 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textPregunta3Monopolo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pregunta 3: ¿Cómo se relaciona la longitud del monopolo con la frecuencia de operación?"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/GroupPregunta3Monopolo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPregunta3Monopolo">
+
+                        <RadioButton
+                            android:id="@+id/rButtonA3Monopolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="La longitud del monopolo es independiente de la frecuencia de operación." />
+
+                        <RadioButton
+                            android:id="@+id/rButtonB3Monopolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="La longitud del monopolo debe ser la misma que la longitud de onda de la señal deseada." />
+
+                        <RadioButton
+                            android:id="@+id/rButtonC3Monopolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="La longitud del monopolo debe ser el doble de la longitud de onda de la señal deseada." />
+
+                        <RadioButton
+                            android:id="@+id/rButtonD3Monopolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="La longitud del monopolo debe ser la mitad de la longitud de onda de la señal deseada." />
+                    </RadioGroup>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Pregunta 4 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textPregunta4Monopolo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pregunta 4: ¿Dónde se utilizan comúnmente las antenas monopolo?"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/GroupPregunta4Monopolo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPregunta4Monopolo">
+
+                        <RadioButton
+                            android:id="@+id/rButtonA4Monopolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="En sistemas de comunicación de satélite." />
+
+                        <RadioButton
+                            android:id="@+id/rButtonB4Monopolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="En sistemas de comunicación submarina." />
+
+                        <RadioButton
+                            android:id="@+id/rButtonC4Monopolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="En dispositivos móviles como teléfonos celulares." />
+
+                        <RadioButton
+                            android:id="@+id/rButtonD4Monopolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="En antenas parabólicas de gran tamaño." />
+                    </RadioGroup>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Pregunta 5 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textPregunta5Monopolo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pregunta 5: ¿Cuál es una ventaja importante de las antenas monopolo en dispositivos móviles?"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/GroupPregunta5Monopolo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPregunta5Monopolo">
+
+                        <RadioButton
+                            android:id="@+id/rButtonA5Monopolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Alta ganancia direccional." />
+
+                        <RadioButton
+                            android:id="@+id/rButtonB5Monopolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Baja eficiencia de transmisión." />
+
+                        <RadioButton
+                            android:id="@+id/rButtonC5Monopolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Omnidireccionalidad y tamaño compacto." />
+
+                        <RadioButton
+                            android:id="@+id/rButtonD5Monopolo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Uso exclusivo en comunicaciones satelitales." />
+                    </RadioGroup>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Botón de finalización -->
+            <Button
+                android:id="@+id/btnFinMonopolo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Finalizar"
+                android:backgroundTint="@color/Azul"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_custom"
+                android:layout_gravity="center"/>
         </LinearLayout>
     </ScrollView>
-
 </RelativeLayout>

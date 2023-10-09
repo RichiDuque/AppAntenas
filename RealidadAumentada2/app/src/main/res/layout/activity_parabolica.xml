@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".conceptos.ParabolicaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/Azul">
+
+            <ImageView
+                android:id="@+id/imageAntenas"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/antenas" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="5dp"
+                android:backgroundTint="#FFE9A7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textIntroC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Antena con Reflector (Parabólica)" />
+
+                    <TextView
+                        android:id="@+id/textIntroC2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="Definición y Características Principales: La antena con reflector, también conocida como antena parabólica, utiliza una superficie parabólica reflectora para concentrar las ondas electromagnéticas en un punto focal. Suele constar de una antena de alimentación en el punto focal y una gran superficie reflectora parabólica." />
+
+                    <TextView
+                        android:id="@+id/textIntroC3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Principio de Funcionamiento y Diseño Básico" />
+
+                    <TextView
+                        android:id="@+id/textIntroC4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="La superficie parabólica refleja las ondas electromagnéticas entrantes hacia el punto focal, donde se encuentra la antena de alimentación. Esto permite una alta ganancia y directividad en la dirección del foco." />
+
+                    <TextView
+                        android:id="@+id/textIntroC5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Aplicaciones Comunes de las Antenas" />
+
+                    <TextView
+                        android:id="@+id/textIntroC6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="Se utilizan en enlaces de satélite, sistemas de televisión por satélite, radares de largo alcance y comunicaciones de largo alcance en áreas remotas." />
+
+                    <TextView
+                        android:id="@+id/textIntroC7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Ventajas y Limitaciones de las Antenas" />
+
+                    <TextView
+                        android:id="@+id/textIntroC8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Las ventajas incluyen su alta ganancia y directividad, lo que las hace ideales para aplicaciones de largo alcance. Sin embargo, su tamaño puede ser un desafío en aplicaciones móviles, y su orientación precisa es crucial para el rendimiento." />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnAntenaParabolica"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/logod"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"/>
+                <Button
+                    android:id="@+id/btnEvaParabolica"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Evaluación"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_custom"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -6,40 +6,37 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.venta.realidadaumentada.FragmentsActivity;
-import com.venta.realidadaumentada.LoginActivity;
 import com.venta.realidadaumentada.R;
 
-public class EvaConcepActivity extends AppCompatActivity {
+public class EvaMicrostripActivity extends AppCompatActivity {
 
-    Button btnFinal;
-    RadioGroup groupPregunta1, groupPregunta2, groupPregunta3, groupPregunta4, groupPregunta5;
+    Button btnFinalMicrostrip;
+    RadioGroup groupPregunta1Microstrip, groupPregunta2Microstrip, groupPregunta3Microstrip, groupPregunta4Microstrip, groupPregunta5Microstrip;
     SharedPreferences sharedPreferences; // SharedPreferences para guardar la nota
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_eva_concep);
+        setContentView(R.layout.activity_eva_microstrip);
 
-        btnFinal = findViewById(R.id.btnFin);
-        groupPregunta1 = findViewById(R.id.GroupPregunta1);
-        groupPregunta2 = findViewById(R.id.GroupPregunta2);
-        groupPregunta3 = findViewById(R.id.GroupPregunta3);
-        groupPregunta4 = findViewById(R.id.GroupPregunta4);
-        groupPregunta5 = findViewById(R.id.GroupPregunta5);
+        btnFinalMicrostrip = findViewById(R.id.btnFinMicrostrip);
+        groupPregunta1Microstrip = findViewById(R.id.GroupPregunta1Microstrip);
+        groupPregunta2Microstrip = findViewById(R.id.GroupPregunta2Microstrip);
+        groupPregunta3Microstrip = findViewById(R.id.GroupPregunta3Microstrip);
+        groupPregunta4Microstrip = findViewById(R.id.GroupPregunta4Microstrip);
+        groupPregunta5Microstrip = findViewById(R.id.GroupPregunta5Microstrip);
 
         sharedPreferences = getSharedPreferences("Notas", MODE_PRIVATE); // Nombre de SharedPreferences
 
-        btnFinal.setOnClickListener(view -> {
+        btnFinalMicrostrip.setOnClickListener(view -> {
             int notaTotal = calcularNota();
 
             // Guardar la nota total en SharedPreferences
             SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putInt("nota_Concepto", notaTotal);
+            editor.putInt("nota_AntenaMicrostrip", notaTotal);
             editor.apply();
 
             finish();
@@ -52,11 +49,11 @@ public class EvaConcepActivity extends AppCompatActivity {
         int nota = 0;
 
         // Comprobar las respuestas seleccionadas y compararlas con las respuestas correctas
-        nota += calcularPregunta(groupPregunta1, R.id.rButtonB);
-        nota += calcularPregunta(groupPregunta2, R.id.rButtonC2);
-        nota += calcularPregunta(groupPregunta3, R.id.rButtonC3);
-        nota += calcularPregunta(groupPregunta4, R.id.rButtonC4);
-        nota += calcularPregunta(groupPregunta5, R.id.rButtonC5);
+        nota += calcularPregunta(groupPregunta1Microstrip, R.id.rButtonC1Microstrip);
+        nota += calcularPregunta(groupPregunta2Microstrip, R.id.rButtonC2Microstrip);
+        nota += calcularPregunta(groupPregunta3Microstrip, R.id.rButtonC3Microstrip);
+        nota += calcularPregunta(groupPregunta4Microstrip, R.id.rButtonC4Microstrip);
+        nota += calcularPregunta(groupPregunta5Microstrip, R.id.rButtonA5Microstrip);
 
         return nota;
     }

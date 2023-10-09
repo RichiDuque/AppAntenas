@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".conceptos.MicrostripActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/Azul">
+
+            <ImageView
+                android:id="@+id/imageAntenas"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/antenas" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="5dp"
+                android:backgroundTint="#FFE9A7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textIntroMicrostrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Antena Plana (Microstrip)" />
+
+                    <TextView
+                        android:id="@+id/textIntroMicrostrip2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="La antena plana, también conocida como antena Microstrip, es una antena plana y delgada que se fabrica mediante la impresión de circuitos en una placa de sustrato dieléctrico. Son conocidas por su perfil delgado y diseño compacto." />
+
+                    <TextView
+                        android:id="@+id/textIntroMicrostrip3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Principio de Funcionamiento y Diseño Básico" />
+
+                    <TextView
+                        android:id="@+id/textIntroMicrostrip4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="Las antenas Microstrip funcionan mediante la propagación de ondas electromagnéticas a lo largo de la superficie de la placa de sustrato. La forma y el tamaño de la placa, así como los componentes impresos, determinan la frecuencia de resonancia y las características de radiación." />
+
+                    <TextView
+                        android:id="@+id/textIntroMicrostrip5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Aplicaciones Comunes de las Antenas" />
+
+                    <TextView
+                        android:id="@+id/textIntroMicrostrip6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="Se utilizan en sistemas de comunicación inalámbrica, radares, teléfonos móviles y otras aplicaciones donde el espacio es limitado y se requiere una antena de perfil bajo." />
+
+                    <TextView
+                        android:id="@+id/textIntroMicrostrip7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Ventajas y Limitaciones de las Antenas" />
+
+                    <TextView
+                        android:id="@+id/textIntroMicrostrip8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Las ventajas incluyen su diseño compacto, bajo perfil y facilidad de integración en dispositivos electrónicos. Sin embargo, pueden tener una ganancia y una eficiencia de radiación más bajas en comparación con antenas más grandes." />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnAntenaMicrostrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/logod"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"/>
+                <Button
+                    android:id="@+id/btnEvaConcepMicrostrip"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Evaluación"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_custom"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

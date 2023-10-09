@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DBF0F1"
-    tools:context=".cuestionarios.EvaDipoActivity">
+    tools:context=".cuestionarios.EvaHiloActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -30,37 +30,43 @@
                     android:padding="10dp">
 
                     <TextView
-                        android:id="@+id/textPregunta1Dipolo"
+                        android:id="@+id/textPregunta1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pregunta 1: ¿Cuál es una característica clave de las antenas dipolo?"
+                        android:text="Pregunta 1: ¿Cuál es la función principal de una antena en un sistema de comunicación inalámbrica?"
                         android:textColor="@color/black"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
                     <RadioGroup
-                        android:id="@+id/GroupPregunta1Dipolo"
+                        android:id="@+id/GroupPregunta1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/textPregunta1Dipolo">
+                        android:layout_below="@id/textPregunta1">
 
                         <RadioButton
-                            android:id="@+id/rButtonA1Dipolo"
+                            android:id="@+id/rButtonA"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Utilizan un solo elemento conductor" />
+                            android:text="Transmitir señales eléctricas" />
 
                         <RadioButton
-                            android:id="@+id/rButtonB1Dipolo"
+                            android:id="@+id/rButtonB"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Son poco eficientes en aplicaciones fijas" />
+                            android:text="Convertir señales eléctricas en ondas electromagnéticas y viceversa" />
 
                         <RadioButton
-                            android:id="@+id/rButtonC1Dipolo"
+                            android:id="@+id/rButtonC"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Se componen de dos elementos conductores alineados" />
+                            android:text="Amplificar las señales de radio" />
+
+                        <RadioButton
+                            android:id="@+id/rButtonD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Conectar dispositivos electrónicos" />
                     </RadioGroup>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -78,37 +84,43 @@
                     android:padding="10dp">
 
                     <TextView
-                        android:id="@+id/textPregunta2Dipolo"
+                        android:id="@+id/textPregunta2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pregunta 2: ¿Qué factor determina la longitud de un dipolo para una frecuencia de operación específica?"
+                        android:text="Pregunta 2: ¿Qué es la radiación electromagnética y por qué es importante en la transmisión de señales?"
                         android:textColor="@color/black"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
                     <RadioGroup
-                        android:id="@+id/GroupPregunta2Dipolo"
+                        android:id="@+id/GroupPregunta2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/textPregunta2Dipolo">
+                        android:layout_below="@id/textPregunta2">
 
                         <RadioButton
-                            android:id="@+id/rButtonA2Dipolo"
+                            android:id="@+id/rButtonA2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="La ganancia de la antena" />
+                            android:text="Un tipo de radiación solar que afecta a las antenas" />
 
                         <RadioButton
-                            android:id="@+id/rButtonB2Dipolo"
+                            android:id="@+id/rButtonB2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="La impedancia de la antena" />
+                            android:text="La propagación de señales a través de cables" />
 
                         <RadioButton
-                            android:id="@+id/rButtonC2Dipolo"
+                            android:id="@+id/rButtonC2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="La longitud de onda de la señal" />
+                            android:text="Ondas electromagnéticas que transportan información sin cables" />
+
+                        <RadioButton
+                            android:id="@+id/rButtonD2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="La transmisión de datos a través de fibra óptica" />
                     </RadioGroup>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -126,37 +138,43 @@
                     android:padding="10dp">
 
                     <TextView
-                        android:id="@+id/textPregunta3Dipolo"
+                        android:id="@+id/textPregunta3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pregunta 3: ¿Cuál es una aplicación común de las antenas dipolo?"
+                        android:text="Pregunta 3: ¿Cuál es el proceso que ocurre cuando una onda electromagnética incide sobre una antena?"
                         android:textColor="@color/black"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
                     <RadioGroup
-                        android:id="@+id/GroupPregunta3Dipolo"
+                        android:id="@+id/GroupPregunta3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/textPregunta3Dipolo">
+                        android:layout_below="@id/textPregunta3">
 
                         <RadioButton
-                            android:id="@+id/rButtonA3Dipolo"
+                            android:id="@+id/rButtonA3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Transmisión de señales en dispositivos móviles" />
+                            android:text=" La antena amplifica la señal" />
 
                         <RadioButton
-                            android:id="@+id/rButtonB3Dipolo"
+                            android:id="@+id/rButtonB3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Recepción de señales de televisión por cable" />
+                            android:text="La antena convierte la señal en una señal digital" />
 
                         <RadioButton
-                            android:id="@+id/rButtonC3Dipolo"
+                            android:id="@+id/rButtonC3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Transmisión de señales de radio y televisión aéreas" />
+                            android:text="La antena induce una corriente eléctrica en su estructura" />
+
+                        <RadioButton
+                            android:id="@+id/rButtonD3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" La antena bloquea la señal" />
                     </RadioGroup>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -174,37 +192,43 @@
                     android:padding="10dp">
 
                     <TextView
-                        android:id="@+id/textPregunta4Dipolo"
+                        android:id="@+id/textPregunta4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pregunta 4: ¿Cuál es la diferencia principal entre una antena dipolo y una antena monopolo?"
+                        android:text="Pregunta 4: ¿Cuál de las siguientes afirmaciones es cierta sobre las antenas?"
                         android:textColor="@color/black"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
                     <RadioGroup
-                        android:id="@+id/GroupPregunta4Dipolo"
+                        android:id="@+id/GroupPregunta4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/textPregunta4Dipolo">
+                        android:layout_below="@id/textPregunta4">
 
                         <RadioButton
-                            android:id="@+id/rButtonA4Dipolo"
+                            android:id="@+id/rButtonA4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Las antenas dipolo tienen una longitud de onda más corta." />
+                            android:text=" Las antenas no son necesarias en las comunicaciones inalámbricas" />
 
                         <RadioButton
-                            android:id="@+id/rButtonB4Dipolo"
+                            android:id="@+id/rButtonB4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Las antenas dipolo utilizan dos elementos conductores." />
+                            android:text="Las antenas solo transmiten, no reciben señales" />
 
                         <RadioButton
-                            android:id="@+id/rButtonC4Dipolo"
+                            android:id="@+id/rButtonC4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Las antenas monopolo son más eficientes en aplicaciones fijas." />
+                            android:text="Las antenas permiten la transmisión y recepción de señales electromagnéticas" />
+
+                        <RadioButton
+                            android:id="@+id/rButtonD4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" Las antenas solo funcionan en ambientes urbanos" />
                     </RadioGroup>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -222,44 +246,50 @@
                     android:padding="10dp">
 
                     <TextView
-                        android:id="@+id/textPregunta5Dipolo"
+                        android:id="@+id/textPregunta5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pregunta 5: ¿Por qué se ajusta la longitud de un dipolo a una fracción específica de la longitud de onda de la señal?"
+                        android:text="Pregunta 5: ¿Por qué la comprensión de la interacción entre las ondas electromagnéticas y las antenas es importante?"
                         android:textColor="@color/black"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
                     <RadioGroup
-                        android:id="@+id/GroupPregunta5Dipolo"
+                        android:id="@+id/GroupPregunta5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/textPregunta5Dipolo">
+                        android:layout_below="@id/textPregunta5">
 
                         <RadioButton
-                            android:id="@+id/rButtonA5Dipolo"
+                            android:id="@+id/rButtonA5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Para mejorar la resistencia del dipolo" />
+                            android:text="No es importante, ya que las antenas siempre funcionan correctamente" />
 
                         <RadioButton
-                            android:id="@+id/rButtonB5Dipolo"
+                            android:id="@+id/rButtonB5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Para lograr una resonancia óptima y eficiencia de transmisión" />
+                            android:text=" Para diseñar antenas que sean estéticamente atractivas" />
 
                         <RadioButton
-                            android:id="@+id/rButtonC5Dipolo"
+                            android:id="@+id/rButtonC5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Para reducir el tamaño total de la antena" />
+                            android:text="Para diseñar antenas eficientes y sistemas de comunicación confiables" />
+
+                        <RadioButton
+                            android:id="@+id/rButtonD5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Solo es importante para los ingenieros de antenas" />
                     </RadioGroup>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
             <!-- Botón de finalización -->
             <Button
-                android:id="@+id/btnFinalizarDipolo"
+                android:id="@+id/btnFin"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Finalizar"

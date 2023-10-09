@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".conceptos.MIMOActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/Azul">
+
+            <ImageView
+                android:id="@+id/imageAntenas"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/antenas" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="5dp"
+                android:backgroundTint="#FFE9A7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textIntroMIMO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Antena MIMO (Multiple-Input Multiple-Output)" />
+
+                    <TextView
+                        android:id="@+id/textIntroMIMO2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="La antena MIMO (Multiple-Input Multiple-Output) es una técnica avanzada que utiliza múltiples antenas en el transmisor y el receptor para mejorar la calidad de la señal y aumentar la velocidad de transmisión." />
+
+                    <TextView
+                        android:id="@+id/textIntroMIMO3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Principio de Funcionamiento y Diseño Básico" />
+
+                    <TextView
+                        android:id="@+id/textIntroMIMO4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="Al utilizar múltiples antenas en el transmisor y el receptor, se pueden transmitir varios flujos de datos simultáneamente. Esto mejora la calidad de la señal y aumenta la velocidad de transmisión." />
+
+                    <TextView
+                        android:id="@+id/textIntroMIMO5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Aplicaciones Comunes de las Antenas" />
+
+                    <TextView
+                        android:id="@+id/textIntroMIMO6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:text="Se utiliza en tecnologías de comunicación inalámbrica modernas, como Wi-Fi 6 y 5G, para mejorar la velocidad y la confiabilidad de las conexiones." />
+
+                    <TextView
+                        android:id="@+id/textIntroMIMO7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Ventajas y Limitaciones de las Antenas" />
+
+                    <TextView
+                        android:id="@+id/textIntroMIMO8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Las ventajas incluyen un mayor rendimiento y velocidad de transmisión. Sin embargo, requieren un hardware más complejo y una gestión de señales más sofisticada." />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnAntenaMIMO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/logod"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"/>
+                <Button
+                    android:id="@+id/btnEvaConcepMIMO"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Evaluación"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_custom"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

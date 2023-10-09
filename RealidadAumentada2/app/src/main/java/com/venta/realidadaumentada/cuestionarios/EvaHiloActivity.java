@@ -6,15 +6,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.venta.realidadaumentada.FragmentsActivity;
-import com.venta.realidadaumentada.LoginActivity;
 import com.venta.realidadaumentada.R;
 
-public class EvaConcepActivity extends AppCompatActivity {
+public class EvaHiloActivity extends AppCompatActivity {
 
     Button btnFinal;
     RadioGroup groupPregunta1, groupPregunta2, groupPregunta3, groupPregunta4, groupPregunta5;
@@ -23,7 +20,7 @@ public class EvaConcepActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_eva_concep);
+        setContentView(R.layout.activity_eva_hilo);
 
         btnFinal = findViewById(R.id.btnFin);
         groupPregunta1 = findViewById(R.id.GroupPregunta1);
@@ -39,7 +36,7 @@ public class EvaConcepActivity extends AppCompatActivity {
 
             // Guardar la nota total en SharedPreferences
             SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putInt("nota_Concepto", notaTotal);
+            editor.putInt("nota_AntenaHilo", notaTotal);
             editor.apply();
 
             finish();
@@ -52,11 +49,11 @@ public class EvaConcepActivity extends AppCompatActivity {
         int nota = 0;
 
         // Comprobar las respuestas seleccionadas y compararlas con las respuestas correctas
-        nota += calcularPregunta(groupPregunta1, R.id.rButtonB);
-        nota += calcularPregunta(groupPregunta2, R.id.rButtonC2);
-        nota += calcularPregunta(groupPregunta3, R.id.rButtonC3);
-        nota += calcularPregunta(groupPregunta4, R.id.rButtonC4);
-        nota += calcularPregunta(groupPregunta5, R.id.rButtonC5);
+        nota += calcularPregunta(groupPregunta1, R.id.rButtonC);
+        nota += calcularPregunta(groupPregunta2, R.id.rButtonB);
+        nota += calcularPregunta(groupPregunta3, R.id.rButtonA);
+        nota += calcularPregunta(groupPregunta4, R.id.rButtonB);
+        nota += calcularPregunta(groupPregunta5, R.id.rButtonD);
 
         return nota;
     }

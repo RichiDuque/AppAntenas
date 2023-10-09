@@ -8,12 +8,12 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.venta.realidadaumentada.fragments.HomeFragment"
-        tools:layout="@layout/activity_register" />
+        tools:layout="@layout/activity_user" />
 
     <fragment
         android:id="@+id/navigation_credit_card"
-        android:name="com.venta.realidadaumentada.fragments.CreditCardFragment"
-        tools:layout="@layout/activity_register" />
+        android:name="com.venta.realidadaumentada.fragments.NotasFragment"
+        tools:layout="@layout/activity_user" />
 
     <fragment
         android:id="@+id/navigation_notification"

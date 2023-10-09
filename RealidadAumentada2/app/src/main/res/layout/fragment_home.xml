@@ -21,7 +21,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="70dp"
             android:fontFamily="sans-serif-condensed-medium"
-            android:text="Hola, Ricardo!"
+            android:text="Hola Desconocido!"
             android:textAlignment="textStart"
             android:textColor="@color/white"
             android:textSize="30dp" />

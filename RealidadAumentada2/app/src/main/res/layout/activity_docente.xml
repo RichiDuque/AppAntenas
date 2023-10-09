@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".DocenteActivity">
 
     <RelativeLayout
         android:layout_width="400dp"
@@ -13,10 +13,10 @@
         android:layout_centerVertical="true">
 
         <TextView
-            android:id="@+id/txtBienvenido"
+            android:id="@+id/txtMenuDocente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre Usuario"
+            android:text="Menu Docente"
             android:fontFamily="sans-serif-condensed"
             android:textStyle="bold"
             android:textSize="40dp"
@@ -28,16 +28,16 @@
             android:id="@+id/txtDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ingrese su nombre de usuario"
+            android:text="Ingrese sus datos"
             android:textColor="@color/black"
-            android:layout_below="@id/txtBienvenido"
+            android:layout_below="@id/txtMenuDocente"
             android:fontFamily="sans-serif-condensed"
             android:textSize="16dp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="40dp"/>
 
         <EditText
-            android:id="@+id/editUsario"
+            android:id="@+id/editDocente"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -48,8 +48,19 @@
             android:layout_marginTop="30dp"
             android:layout_below="@id/txtDetail"/>
 
+        <EditText
+            android:id="@+id/editContrasena"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Contraseña"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/editDocente"/>
+
         <Button
-            android:id="@+id/btnCrear"
+            android:id="@+id/btnIngresarD"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Ingresar"
@@ -58,7 +69,8 @@
             android:textColor="@color/white"
             android:backgroundTint="@color/Azul"
             android:background="@drawable/button_custom"
-            android:layout_below="@id/editUsario"/>
+            android:layout_below="@id/editContrasena"/>
 
     </RelativeLayout>
+
 </RelativeLayout>
