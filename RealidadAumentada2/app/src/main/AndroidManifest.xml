@@ -20,63 +20,63 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".YagiUdaActivity"
+            android:name=".conceptos.YagiUdaActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MicrostripActivity"
+            android:name=".conceptos.MicrostripActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MIMOActivity"
+            android:name=".conceptos.MIMOActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ParabolicaActivity"
+            android:name=".conceptos.ParabolicaActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".HiloActivity"
+            android:name=".conceptos.HiloActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".EvaYagiUdaActivity"
+            android:name=".cuestionarios.EvaYagiUdaActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".EvaMIMOActivity"
+            android:name=".cuestionarios.EvaMIMOActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".EvaParabolaActivity"
+            android:name=".cuestionarios.EvaParabolaActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".EvaHiloActivity"
+            android:name=".cuestionarios.EvaHiloActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -90,28 +90,28 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".EvaPanelActivity"
+            android:name=".cuestionarios.EvaPanelActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".EvaDipoActivity"
+            android:name=".cuestionarios.EvaDipoActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PanelActivity"
+            android:name=".conceptos.PanelActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DipoloActivity"
+            android:name=".conceptos.DipoloActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

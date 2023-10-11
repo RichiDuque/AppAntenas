@@ -16,12 +16,17 @@ import android.widget.TextView;
 import com.venta.realidadaumentada.conceptos.ConceptosActivity;
 import com.venta.realidadaumentada.R;
 import com.venta.realidadaumentada.conceptos.DipoloActivity;
+import com.venta.realidadaumentada.conceptos.HiloActivity;
+import com.venta.realidadaumentada.conceptos.MIMOActivity;
+import com.venta.realidadaumentada.conceptos.MicrostripActivity;
 import com.venta.realidadaumentada.conceptos.MonoPoloActivity;
 import com.venta.realidadaumentada.conceptos.PanelActivity;
+import com.venta.realidadaumentada.conceptos.ParabolicaActivity;
+import com.venta.realidadaumentada.conceptos.YagiUdaActivity;
 
 public class HomeFragment extends Fragment {
 
-    Button btnIngresar, btnMono, btnDipo, btnPanel;
+    Button btnIngresar, btnMono, btnDipo, btnPanel, btnParabolica, btnYagi, btnMicro, btnMimo, btnHilo;
     TextView txtTitulo;
     SharedPreferences sharedPreferences;
 
@@ -34,6 +39,11 @@ public class HomeFragment extends Fragment {
         btnMono = rootView.findViewById(R.id.btnMono);
         btnDipo = rootView.findViewById(R.id.btnDipolo);
         btnPanel = rootView.findViewById(R.id.btnPanel);
+        btnParabolica = rootView.findViewById(R.id.btnParabolica);
+        btnYagi = rootView.findViewById(R.id.btnYagiUda);
+        btnMicro = rootView.findViewById(R.id.btnMicrostrip);
+        btnMimo = rootView.findViewById(R.id.btnMIMO);
+        btnHilo = rootView.findViewById(R.id.btnHilo);
         txtTitulo = rootView.findViewById(R.id.txtTitulo);
 
         sharedPreferences = requireContext().getSharedPreferences("Usuario", Context.MODE_PRIVATE);
@@ -62,6 +72,31 @@ public class HomeFragment extends Fragment {
 
         btnPanel.setOnClickListener(view -> {
             Intent intent = new Intent(getContext(), PanelActivity.class);
+            startActivity(intent);
+        });
+
+        btnParabolica.setOnClickListener(view -> {
+            Intent intent = new Intent(getContext(), ParabolicaActivity.class);
+            startActivity(intent);
+        });
+
+        btnYagi.setOnClickListener(view -> {
+            Intent intent = new Intent(getContext(), YagiUdaActivity.class);
+            startActivity(intent);
+        });
+
+        btnMicro.setOnClickListener(view -> {
+            Intent intent = new Intent(getContext(), MicrostripActivity.class);
+            startActivity(intent);
+        });
+
+        btnMimo.setOnClickListener(view -> {
+            Intent intent = new Intent(getContext(), MIMOActivity.class);
+            startActivity(intent);
+        });
+
+        btnHilo.setOnClickListener(view -> {
+            Intent intent = new Intent(getContext(), HiloActivity.class);
             startActivity(intent);
         });
 
