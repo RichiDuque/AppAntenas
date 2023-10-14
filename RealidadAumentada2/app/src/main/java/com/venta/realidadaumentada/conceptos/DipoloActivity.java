@@ -8,8 +8,8 @@ import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.venta.realidadaumentada.R;
+import com.venta.realidadaumentada.antenas.AntenaDipoActivity;
 import com.venta.realidadaumentada.cuestionarios.EvaDipoActivity;
-import com.venta.realidadaumentada.cuestionarios.EvaMonoActivity;
 
 public class DipoloActivity extends AppCompatActivity {
 
@@ -27,6 +27,11 @@ public class DipoloActivity extends AppCompatActivity {
         btnEval.setOnClickListener(view -> {
             finish();
             Intent intent = new Intent(this, EvaDipoActivity.class);
+            startActivity(intent);
+        });
+
+        btnAntena.setOnClickListener(view -> {
+            Intent intent = new Intent(this, AntenaDipoActivity.class);
             startActivity(intent);
         });
     }

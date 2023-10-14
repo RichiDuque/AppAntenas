@@ -36,7 +36,7 @@ public class EvaParabolaActivity extends AppCompatActivity {
 
             // Guardar la nota total en SharedPreferences
             SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putInt("nota_AntenaParabolica", notaTotal);
+            editor.putInt("nota_Parabolica", notaTotal);
             editor.apply();
 
             finish();

@@ -20,13 +20,12 @@ import com.venta.realidadaumentada.conceptos.HiloActivity;
 import com.venta.realidadaumentada.conceptos.MIMOActivity;
 import com.venta.realidadaumentada.conceptos.MicrostripActivity;
 import com.venta.realidadaumentada.conceptos.MonoPoloActivity;
-import com.venta.realidadaumentada.conceptos.PanelActivity;
 import com.venta.realidadaumentada.conceptos.ParabolicaActivity;
 import com.venta.realidadaumentada.conceptos.YagiUdaActivity;
 
 public class HomeFragment extends Fragment {
 
-    Button btnIngresar, btnMono, btnDipo, btnPanel, btnParabolica, btnYagi, btnMicro, btnMimo, btnHilo;
+    Button btnIngresar, btnMono, btnDipo, btnParabolica, btnYagi, btnMicro, btnMimo, btnHilo;
     TextView txtTitulo;
     SharedPreferences sharedPreferences;
 
@@ -38,7 +37,6 @@ public class HomeFragment extends Fragment {
         btnIngresar = rootView.findViewById(R.id.btnIntro);
         btnMono = rootView.findViewById(R.id.btnMono);
         btnDipo = rootView.findViewById(R.id.btnDipolo);
-        btnPanel = rootView.findViewById(R.id.btnPanel);
         btnParabolica = rootView.findViewById(R.id.btnParabolica);
         btnYagi = rootView.findViewById(R.id.btnYagiUda);
         btnMicro = rootView.findViewById(R.id.btnMicrostrip);
@@ -67,11 +65,6 @@ public class HomeFragment extends Fragment {
 
         btnDipo.setOnClickListener(view -> {
             Intent intent = new Intent(getContext(), DipoloActivity.class);
-            startActivity(intent);
-        });
-
-        btnPanel.setOnClickListener(view -> {
-            Intent intent = new Intent(getContext(), PanelActivity.class);
             startActivity(intent);
         });
 

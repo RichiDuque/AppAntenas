@@ -36,7 +36,7 @@ public class EvaMicrostripActivity extends AppCompatActivity {
 
             // Guardar la nota total en SharedPreferences
             SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putInt("nota_AntenaMicrostrip", notaTotal);
+            editor.putInt("nota_Microstrip", notaTotal);
             editor.apply();
 
             finish();

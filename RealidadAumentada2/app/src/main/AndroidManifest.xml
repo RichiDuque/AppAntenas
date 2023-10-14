@@ -20,6 +20,69 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".EstudiantesActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".FragmentsDocenteActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ComentarioActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".antenas.AntenaHiloActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".antenas.AntenaMIMOActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".antenas.AntenaMicrostripActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".antenas.AntenaYagiUdaActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".antenas.AntenaParabolicaActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".antenas.AntenaDipoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".conceptos.YagiUdaActivity"
             android:exported="false">
             <meta-data
@@ -90,21 +153,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".cuestionarios.EvaPanelActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".cuestionarios.EvaDipoActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".conceptos.PanelActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -146,7 +195,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".antenas.AntenaConcepActivity"
+            android:name=".cuestionarios.EvaMicrostripActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

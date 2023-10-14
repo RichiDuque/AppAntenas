@@ -1,14 +1,13 @@
 package com.venta.realidadaumentada;
 
 public class CodigoClase {
-    private String _id;
-    private int codigo_clase;
+    private int codigoClase;
 
-    public String get_id() {
-        return _id;
+    public CodigoClase(int codigoClase) {
+        this.codigoClase = codigoClase;
     }
 
     public int getCodigoClase() {
-        return codigo_clase;
+        return codigoClase;
     }
 }

@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText editCodigo;
     private Button btnIngresar;
+    TextView txtDocente;
     private SharedPreferences sharedPreferences;
 
     @Override
@@ -41,19 +43,23 @@ public class LoginActivity extends AppCompatActivity {
 
         editCodigo = findViewById(R.id.editUsario);
         btnIngresar = findViewById(R.id.btnIngresar);
+        txtDocente = findViewById(R.id.txtDocente);
 
         sharedPreferences = getSharedPreferences("Usuario", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.clear(); // Borra todos los datos en el SharedPreferences
         editor.apply();
 
-        String codigoGuardado = sharedPreferences.getString("codigo_clase", "");
-
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 validarCodigo();
             }
+        });
+
+        txtDocente.setOnClickListener(view -> {
+            Intent intent = new Intent(this, DocenteActivity.class);
+            startActivity(intent);
         });
     }
 

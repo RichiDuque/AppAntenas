@@ -15,4 +15,6 @@
     <string name="all">TODO</string>
     <string name="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quas illo eaque maiores reprehenderit, molestiae aliquid reiciendis natus.</string>
     <string name="subtitle">Lorem ipsum dolor sit consectur.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

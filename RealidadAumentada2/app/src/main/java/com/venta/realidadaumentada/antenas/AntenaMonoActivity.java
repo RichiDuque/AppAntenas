@@ -48,7 +48,8 @@ public class AntenaMonoActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_antena_mono);
 
-        btnAntena = findViewById(R.id.buttonAntena);
+        btnAntena = findViewById(R.id.buttonAntenaMono);
+        btnAntena2 = findViewById(R.id.buttonAntenaMono2);
 
         getSupportFragmentManager().addFragmentOnAttachListener(this);
 
@@ -63,6 +64,10 @@ public class AntenaMonoActivity extends AppCompatActivity implements
         btnAntena.setOnClickListener(view -> {
             loadModels();
         });
+        btnAntena2.setOnClickListener(view -> {
+            loadModels2();
+        });
+
     }
     @Override
     public void onAttachFragment(@NonNull FragmentManager fragmentManager, @NonNull Fragment fragment) {
@@ -97,7 +102,7 @@ public class AntenaMonoActivity extends AppCompatActivity implements
     public void loadModels() {
         WeakReference<AntenaMonoActivity> weakActivity = new WeakReference<>(this);
         ModelRenderable.builder()
-                .setSource(this, R.raw.antenaprueba)
+                .setSource(this, R.raw.monopolo_sin_texto)
                 .setIsFilamentGltf(true)
                 .setAsyncLoadEnabled(true)
                 .build()
@@ -130,7 +135,7 @@ public class AntenaMonoActivity extends AppCompatActivity implements
     public void loadModels2() {
         WeakReference<AntenaMonoActivity> weakActivity = new WeakReference<>(this);
         ModelRenderable.builder()
-                .setSource(this, R.raw.rusted_antennas)
+                .setSource(this, R.raw.monopolo_con_texto)
                 .setIsFilamentGltf(true)
                 .setAsyncLoadEnabled(true)
                 .build()
@@ -165,8 +170,8 @@ public class AntenaMonoActivity extends AppCompatActivity implements
             Toast.makeText(this, "Loading...", Toast.LENGTH_SHORT).show();
             return;
         }
-        float minScale = 0.1f; // Cambia este valor según tus necesidades
-        float maxScale = 1.0f;
+        float minScale = 0.01f; // Cambia este valor según tus necesidades
+        float maxScale = 0.1f;
         // Create the Anchor.
         Anchor anchor = hitResult.createAnchor();
         AnchorNode anchorNode = new AnchorNode(anchor);

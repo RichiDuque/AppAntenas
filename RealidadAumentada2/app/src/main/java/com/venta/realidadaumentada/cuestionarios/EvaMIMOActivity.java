@@ -36,7 +36,7 @@ public class EvaMIMOActivity extends AppCompatActivity {
 
             // Guardar la nota total en SharedPreferences
             SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putInt("nota_AntenaMIMO", notaTotal);
+            editor.putInt("nota_MIMO", notaTotal);
             editor.apply();
 
             finish();

@@ -36,7 +36,7 @@ public class EvaHiloActivity extends AppCompatActivity {
 
             // Guardar la nota total en SharedPreferences
             SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putInt("nota_AntenaHilo", notaTotal);
+            editor.putInt("nota_Hilo", notaTotal);
             editor.apply();
 
             finish();

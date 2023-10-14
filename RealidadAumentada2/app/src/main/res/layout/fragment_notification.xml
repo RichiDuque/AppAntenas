@@ -5,65 +5,85 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <ImageView
-        android:id="@+id/imageView"
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/fondo_antenas" />
+        android:layout_height="735dp"
+        android:background="@color/Azul">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardAjustes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:backgroundTint="#B2B6C5"
-        android:layout_margin="30dp"
-        app:cardCornerRadius="30dp">
-
-        <RelativeLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAjustes"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:elevation="15dp"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="30dp">
 
-            <TextView
-                android:id="@+id/textTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ajustes"
-                android:textColor="@color/black"
-                android:textSize="30dp"
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:layout_centerHorizontal="true"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/btnReferencias"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Referencias"
-                android:textColor="@color/white"
-                android:padding="20dp"
-                android:layout_marginTop="30dp"
-                android:backgroundTint="@color/Azul"
-                android:background="@drawable/button_custom"
-                android:layout_below="@+id/textTitle"
-                android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ajustes"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"/>
 
-            <Button
-                android:id="@+id/btnCerrar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cerrar Sesión"
-                android:textColor="@color/white"
-                android:padding="20dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="70dp"
-                android:backgroundTint="@color/Azul"
-                android:background="@drawable/button_custom"
-                android:layout_below="@id/btnReferencias"
-                android:layout_centerHorizontal="true"/>
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/btnComentarios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PQRS"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/Azul"
+                    android:background="@drawable/button_custom"
+                    android:layout_below="@+id/textTitle"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:id="@+id/btnReferencias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Referencias"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/Azul"
+                    android:background="@drawable/button_custom"
+                    android:layout_below="@+id/btnComentarios"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:id="@+id/btnCerrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salir"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:padding="20dp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="70dp"
+                    android:backgroundTint="@color/Azul"
+                    android:background="@drawable/button_custom"
+                    android:layout_below="@id/btnReferencias"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
 
 </RelativeLayout>

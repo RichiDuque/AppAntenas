@@ -7,8 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.venta.realidadaumentada.antenas.AntenaConcepActivity;
-import com.venta.realidadaumentada.cuestionarios.EvaConcepActivity;
+import com.venta.realidadaumentada.antenas.AntenaHiloActivity;
 import com.venta.realidadaumentada.R;
 import com.venta.realidadaumentada.cuestionarios.EvaHiloActivity;
 
@@ -30,7 +29,7 @@ public class HiloActivity extends AppCompatActivity {
             startActivity(intent);
         });
         btnAntena.setOnClickListener(view -> {
-            Intent intent = new Intent(this, AntenaConcepActivity.class);
+            Intent intent = new Intent(this, AntenaHiloActivity.class);
             startActivity(intent);
         });
     }

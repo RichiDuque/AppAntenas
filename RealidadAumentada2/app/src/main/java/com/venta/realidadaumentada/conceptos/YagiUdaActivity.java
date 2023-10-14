@@ -7,8 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.venta.realidadaumentada.antenas.AntenaConcepActivity;
-import com.venta.realidadaumentada.cuestionarios.EvaConcepActivity;
+import com.venta.realidadaumentada.antenas.AntenaYagiUdaActivity;
 import com.venta.realidadaumentada.R;
 import com.venta.realidadaumentada.cuestionarios.EvaYagiUdaActivity;
 
@@ -32,7 +31,7 @@ public class YagiUdaActivity extends AppCompatActivity {
         });
 
         btnAntenaYagiUda.setOnClickListener(view -> {
-            Intent intent = new Intent(this, AntenaConcepActivity.class);
+            Intent intent = new Intent(this, AntenaYagiUdaActivity.class);
             startActivity(intent);
         });
     }

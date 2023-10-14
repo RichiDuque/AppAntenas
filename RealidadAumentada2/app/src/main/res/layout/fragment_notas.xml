@@ -8,12 +8,22 @@
     <RelativeLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="0dp"
-        android:layout_height="800dp"
+        android:layout_height="700dp"
         android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/textDefini">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardIntro"
@@ -194,7 +204,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardPanel"
+            android:id="@+id/cardParabolica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/cardDipolo"
@@ -209,7 +219,7 @@
                 android:padding="10dp">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardPanelImg"
+                    android:id="@+id/cardParabolicaImg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
@@ -217,7 +227,7 @@
                     app:cardElevation="5dp">
 
                     <ImageView
-                        android:id="@+id/imgPanel"
+                        android:id="@+id/imgParabolica"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_centerHorizontal="true"
@@ -227,25 +237,25 @@
                 </androidx.cardview.widget.CardView>
 
                 <TextView
-                    android:id="@+id/textTitlePanel"
+                    android:id="@+id/textTitleParabolica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="20dp"
-                    android:layout_toRightOf="@+id/cardPanelImg"
+                    android:layout_toRightOf="@+id/cardParabolicaImg"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Antenas Panel"
+                    android:text="Antenas Parabolica"
                     android:textColor="@color/white"
                     android:textSize="18dp" />
 
                 <TextView
-                    android:id="@+id/textDetailPanel"
+                    android:id="@+id/textDetailParabolica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textTitlePanel"
+                    android:layout_below="@id/textTitleParabolica"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:layout_toRightOf="@+id/cardPanelImg"
+                    android:layout_toRightOf="@+id/cardParabolicaImg"
                     android:fontFamily="sans-serif"
                     android:text="Nota: Sin realizar"
                     android:textColor="@color/white"
@@ -254,18 +264,277 @@
 
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardYagiUda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardParabolica"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/Azul"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardYagiImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/imgYagi"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/panel" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textTitleYagi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/cardYagiImg"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Antenas Yagi Uda"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textDetailYagi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTitleYagi"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/cardYagiImg"
+                    android:fontFamily="sans-serif"
+                    android:text="Nota: Sin realizar"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMicrostrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardYagiUda"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/Azul"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMicroImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/imgMicro"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/panel" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textTitleMicro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/cardMicroImg"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Antenas Microstrip"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textDetailMicro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTitleMicro"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/cardMicroImg"
+                    android:fontFamily="sans-serif"
+                    android:text="Nota: Sin realizar"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMIMO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardMicrostrip"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/Azul"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMIMOImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/imgMIMO"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/panel" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textTitleMIMO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/cardMIMOImg"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Antenas MIMO"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textDetailMIMO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTitleMIMO"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/cardMIMOImg"
+                    android:fontFamily="sans-serif"
+                    android:text="Nota: Sin realizar"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardHilo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardMIMO"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/Azul"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardHiloImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/imgHilo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/panel" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textTitleHilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/cardHiloImg"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Antenas Hilo"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textDetailHilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTitleHilo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/cardHiloImg"
+                    android:fontFamily="sans-serif"
+                    android:text="Nota: Sin realizar"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    </ScrollView>
+
         <TextView
             android:id="@+id/textDefini"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_below="@id/cardPanel"
-            android:layout_marginTop="20dp"
-            android:background="@color/Amarillo"
+            android:background="@drawable/button_custom"
+            android:backgroundTint="@color/Amarillo"
             android:fontFamily="sans-serif-condensed-medium"
             android:text="Nota definitiva: 0,0"
             android:textAlignment="center"
+            android:layout_above="@id/btnEnviar"
             android:textColor="@color/black"
             android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_custom"
+            android:backgroundTint="@color/Azul"
+            android:layout_marginTop="5dp"
+            android:text="Enviar Notas"
+            android:textColor="@color/white"/>
 
     </RelativeLayout>
 

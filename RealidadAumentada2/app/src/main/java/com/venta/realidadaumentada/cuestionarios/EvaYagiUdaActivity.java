@@ -36,7 +36,7 @@ public class EvaYagiUdaActivity extends AppCompatActivity {
 
             // Guardar la nota total en SharedPreferences
             SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putInt("nota_AntenaYagiUda", notaTotalYagiUda);
+            editor.putInt("nota_YagiUda", notaTotalYagiUda);
             editor.apply();
 
             finish();

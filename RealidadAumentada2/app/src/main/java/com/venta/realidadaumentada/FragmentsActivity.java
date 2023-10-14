@@ -19,7 +19,6 @@ public class FragmentsActivity extends AppCompatActivity {
     HomeFragment firstFragment = new HomeFragment();
     NotasFragment secondFragment = new NotasFragment();
     NotificationFragment thirdFragment = new NotificationFragment();
-    Button btnIntro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -3,12 +3,10 @@ package com.venta.realidadaumentada.conceptos;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.venta.realidadaumentada.antenas.AntenaConcepActivity;
-import com.venta.realidadaumentada.cuestionarios.EvaConcepActivity;
+import com.venta.realidadaumentada.antenas.AntenaMIMOActivity;
 import com.venta.realidadaumentada.R;
 import com.venta.realidadaumentada.cuestionarios.EvaMIMOActivity;
 
@@ -32,7 +30,7 @@ public class MIMOActivity extends AppCompatActivity {
         });
 
         btnAntenaMIMO.setOnClickListener(view -> {
-            Intent intent = new Intent(this, AntenaConcepActivity.class);
+            Intent intent = new Intent(this, AntenaMIMOActivity.class);
             startActivity(intent);
         });
     }
