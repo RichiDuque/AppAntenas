@@ -40,9 +40,51 @@ public class EstudiantesAdapter extends ArrayAdapter<Student> {
         textViewNombre.setText(currentStudent.getName());
 
         TextView textViewNotas = listItem.findViewById(R.id.textViewNotas);
-        textViewNotas.setText("Notas: " + currentStudent.getNotas().toString());
+        String notasFormatted = formatNotas(currentStudent.getNotas());
+        textViewNotas.setText("Notas: \n" + notasFormatted);
+
+        TextView textViewFinal = listItem.findViewById(R.id.textNotaFinal);
+        textViewFinal.setText("Nota Final: "+calcularPromedio(currentStudent.getNotas()));
 
         return listItem;
     }
+    private String formatNotas(List<String> notas) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < notas.size(); i++) {
+            stringBuilder.append(notas.get(i));
+            if (i < notas.size() - 1) {
+                stringBuilder.append(",\n");
+            }
+        }
+        return stringBuilder.toString();
+    }
+
+    private double calcularPromedio(List<String> notas) {
+        if (notas.isEmpty()) {
+            return 0.0;
+        }
+
+        double sum = 0;
+        int count = 0;
+        for (String nota : notas) {
+            String[] parts = nota.split(":");
+            if (parts.length == 2) {
+                try {
+                    sum += Double.parseDouble(parts[1].trim());
+                    count++;
+                } catch (NumberFormatException e) {
+                    // Manejar la excepción si el formato no es correcto
+                    e.printStackTrace();
+                }
+            }
+        }
+        if (count > 0) {
+            return sum / count;
+        } else {
+            return 0.0;
+        }
+    }
+
+
 }
 

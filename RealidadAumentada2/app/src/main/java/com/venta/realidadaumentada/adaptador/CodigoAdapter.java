@@ -3,6 +3,7 @@ package com.venta.realidadaumentada.adaptador;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -75,7 +76,7 @@ public class CodigoAdapter extends ArrayAdapter<CodigoClase> {
                                 visualizarCodigo(codigoSeleccionado);
                             } else if (which == 1) {
                                 // Lógica para visualizar el código seleccionado
-                                eliminarCodigo(codigoSeleccionado);
+                                mostrarConfirmacionEliminacion(codigoSeleccionado);
                             }
                         });
                 builder.create().show();
@@ -89,6 +90,21 @@ public class CodigoAdapter extends ArrayAdapter<CodigoClase> {
         Intent intent = new Intent(getContext(), EstudiantesActivity.class);
         intent.putExtra("codigo_clase", codigo);
         getContext().startActivity(intent);
+    }
+
+    private void mostrarConfirmacionEliminacion(String codigo) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+        builder.setTitle("Confirmación");
+        builder.setMessage("¿Estás seguro de que quieres eliminar este código?");
+        builder.setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                eliminarCodigo(codigo);
+            }
+        });
+        builder.setNegativeButton("No", null);
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     private void eliminarCodigo(String codigo) {

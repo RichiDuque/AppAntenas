@@ -46,7 +46,8 @@
             android:singleLine="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            android:layout_below="@id/txtDetail"/>
+            android:layout_below="@id/txtDetail"
+            android:maxLength="20"/>
 
         <Button
             android:id="@+id/btnCrear"

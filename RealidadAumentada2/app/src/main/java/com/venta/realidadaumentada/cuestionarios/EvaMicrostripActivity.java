@@ -40,8 +40,6 @@ public class EvaMicrostripActivity extends AppCompatActivity {
             editor.apply();
 
             finish();
-            Intent intent = new Intent(this, FragmentsActivity.class);
-            startActivity(intent);
         });
     }
 

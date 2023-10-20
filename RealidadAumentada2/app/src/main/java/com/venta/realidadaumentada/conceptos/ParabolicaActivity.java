@@ -1,9 +1,13 @@
 package com.venta.realidadaumentada.conceptos;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.venta.realidadaumentada.antenas.AntenaParabolicaActivity;
@@ -24,14 +28,22 @@ public class ParabolicaActivity extends AppCompatActivity {
         btnAntena = findViewById(R.id.btnAntenaParabolica);
 
         btnEval.setOnClickListener(view -> {
-            finish();
-            Intent intent = new Intent(this, EvaParabolaActivity.class);
-            startActivity(intent);
+            if(isEvaluationCompleted()==6) {
+                finish();
+                Intent intent = new Intent(this, EvaParabolaActivity.class);
+                startActivity(intent);
+            }else{
+                Toast.makeText(this, "Esta evaluación ya fue realizada", Toast.LENGTH_SHORT).show();
+            }
         });
 
         btnAntena.setOnClickListener(view -> {
             Intent intent = new Intent(this, AntenaParabolicaActivity.class);
             startActivity(intent);
         });
+    }
+    private int isEvaluationCompleted() {
+        SharedPreferences sharedPref = getSharedPreferences("Notas", Context.MODE_PRIVATE);
+        return sharedPref.getInt("nota_Parabolica", 6);
     }
 }

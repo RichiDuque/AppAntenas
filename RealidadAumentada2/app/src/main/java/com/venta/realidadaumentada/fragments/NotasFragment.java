@@ -86,16 +86,31 @@ public class NotasFragment extends Fragment {
             String nombreUsuario = sharedPreferencesUser.getString("usuario", "");
             String codigoClase = sharedPreferencesUser.getString("codigo_clase", "");
 
+            int notaConcepto = sharedPreferences.getInt("nota_Concepto", 6);
+            int notaMonopolo = sharedPreferences.getInt("nota_Monopolo", 6);
+            int notaDipolo = sharedPreferences.getInt("nota_Dipolo", 6);
+            int notaParabolica = sharedPreferences.getInt("nota_Parabolica", 6);
+            int notaYagiUda = sharedPreferences.getInt("nota_YagiUda", 6);
+            int notaMicrostrip = sharedPreferences.getInt("nota_Microstrip", 6);
+            int notaMIMO = sharedPreferences.getInt("nota_MIMO", 6);
+            int notaHilo = sharedPreferences.getInt("nota_Hilo", 6);
+
+            // Validar que al menos una nota esté registrada antes de permitir el envío
+            if (notaConcepto == 6 || notaMonopolo == 6 || notaDipolo == 6 || notaParabolica == 6 ||
+                    notaYagiUda == 6 || notaMicrostrip == 6 || notaMIMO == 6 || notaHilo == 6) {
+                mostrarMensaje("Debes resolver todos los modulos para enviar las notas");
+                return;
+            }
             // Obtener las notas individuales de SharedPreferences
-            List<Float> notasList = new ArrayList<>();
-            notasList.add((float) sharedPreferences.getInt("nota_Concepto", 0));
-            notasList.add((float) sharedPreferences.getInt("nota_Monopolo", 0));
-            notasList.add((float) sharedPreferences.getInt("nota_Dipolo", 0));
-            notasList.add((float) sharedPreferences.getInt("nota_Parabolica", 0));
-            notasList.add((float) sharedPreferences.getInt("nota_YagiUda", 0));
-            notasList.add((float) sharedPreferences.getInt("nota_Microstrip", 0));
-            notasList.add((float) sharedPreferences.getInt("nota_MIMO", 0));
-            notasList.add((float) sharedPreferences.getInt("nota_Hilo", 0));
+            List<String> notasList = new ArrayList<>();
+            notasList.add("Conceptos: "+notaConcepto);
+            notasList.add("Monopolo: "+notaMonopolo);
+            notasList.add("Dipolo: "+notaDipolo);
+            notasList.add("Parabolica: "+notaParabolica);
+            notasList.add("Yagi Uda: "+notaYagiUda);
+            notasList.add("Microstrip: "+notaMicrostrip);
+            notasList.add("MIMO: "+notaMIMO);
+            notasList.add("Hilo: "+notaHilo);
 
             // Crear el objeto JSON para la solicitud POST
             JSONObject jsonRequest = new JSONObject();

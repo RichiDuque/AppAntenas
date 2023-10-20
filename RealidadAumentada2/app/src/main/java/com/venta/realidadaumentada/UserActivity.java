@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class UserActivity extends AppCompatActivity {
 
@@ -40,14 +41,19 @@ public class UserActivity extends AppCompatActivity {
                 // Obtiene el nombre de usuario ingresado
                 String usuario = editUsuario.getText().toString();
 
-                // Guarda el nombre de usuario en SharedPreferences
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString("usuario", usuario);
-                editor.apply(); // Guarda los cambios
-
-                // Inicia la siguiente actividad
-                Intent intent = new Intent(UserActivity.this, FragmentsActivity.class);
-                startActivity(intent);
+                if(usuario.isEmpty()){
+                    Toast.makeText(UserActivity.this, "Debe ingresar un nombre de usuario", Toast.LENGTH_SHORT).show();
+                }else{
+                    // Guarda el nombre de usuario en SharedPreferences
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("usuario", usuario);
+                    editor.apply(); // Guarda los cambios
+                    Toast.makeText(UserActivity.this, "Bienvenido!", Toast.LENGTH_SHORT).show();
+                    // Inicia la siguiente actividad
+                    finish();
+                    Intent intent = new Intent(UserActivity.this, FragmentsActivity.class);
+                    startActivity(intent);
+                }
             }
         });
     }

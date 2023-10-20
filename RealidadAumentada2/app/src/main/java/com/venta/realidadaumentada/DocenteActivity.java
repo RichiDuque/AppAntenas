@@ -41,6 +41,7 @@ public class DocenteActivity extends AppCompatActivity {
 
             if (usuarioIngresado.equals(usuario) && contrasenaIngresada.equals(contrasena)) {
                 // Acceso permitido, redirige a la siguiente actividad
+                finish();
                 Intent intent = new Intent(DocenteActivity.this, FragmentsDocenteActivity.class);
                 startActivity(intent);
             } else {

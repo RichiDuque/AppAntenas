@@ -81,7 +81,7 @@ public class CodigosFragment extends Fragment implements CodigoAdapter.OnCodigoD
             builder.setPositiveButton("Crear", (dialog, which) -> {
                 String codigoNuevo = input.getText().toString();
                 // Lógica para hacer POST y crear un nuevo código de clase
-                crearNuevoCodigo(codigoNuevo);
+                validarCodigo(codigoNuevo);
             });
             builder.setNegativeButton("Cancelar", (dialog, which) -> dialog.cancel());
 
@@ -178,6 +178,18 @@ public class CodigosFragment extends Fragment implements CodigoAdapter.OnCodigoD
             });
         } catch (JSONException e) {
             e.printStackTrace();
+        }
+    }
+    private void validarCodigo(String codigo) {
+        String codigoIngresado = codigo;
+
+        // Validar longitud del código y que no comience con cero
+        if (codigoIngresado.length() != 7 || codigoIngresado.startsWith("0")) {
+            // Si el código no cumple con las condiciones, muestra un mensaje de error
+            getActivity().runOnUiThread(() -> Toast.makeText(getContext(), "El código debe tener 7 dígitos y no puede empezar con 0", Toast.LENGTH_SHORT).show());
+            return;
+        }else{
+            crearNuevoCodigo(codigoIngresado);
         }
     }
 }

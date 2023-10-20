@@ -10,10 +10,9 @@
     app:cardCornerRadius="20dp"
     android:background="@color/white">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:padding="16dp">
 
         <TextView
@@ -30,9 +29,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Notas"
+            android:layout_below="@id/textViewNombre"
+            android:layout_marginTop="8dp"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/textNotaFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota Final"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/textViewNotas"/>
+
+    </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

@@ -25,16 +25,6 @@
             android:textColor="@color/white"
             android:backgroundTint="@color/Azul"
             android:background="@drawable/button_custom"/>
-        <Button
-            android:id="@+id/buttonAntenaMicro2"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Partes"
-            android:layout_marginRight="20dp"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/Azul"
-            android:background="@drawable/button_custom"/>
 
     </LinearLayout>
 

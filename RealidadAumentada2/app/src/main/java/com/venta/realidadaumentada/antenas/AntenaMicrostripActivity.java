@@ -48,7 +48,7 @@ public class AntenaMicrostripActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_antena_microstrip);
         btnAntena = findViewById(R.id.buttonAntenaMicro);
-        btnAntena2 = findViewById(R.id.buttonAntenaMicro2);
+        //btnAntena2 = findViewById(R.id.buttonAntenaMicro2);
 
         getSupportFragmentManager().addFragmentOnAttachListener(this);
 
@@ -62,9 +62,6 @@ public class AntenaMicrostripActivity extends AppCompatActivity implements
 
         btnAntena.setOnClickListener(view -> {
             loadModels();
-        });
-        btnAntena2.setOnClickListener(view -> {
-            loadModels2();
         });
 
     }

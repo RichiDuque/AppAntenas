@@ -1,5 +1,7 @@
 package com.venta.realidadaumentada.fragments;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -25,7 +27,7 @@ public class NotificationFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_notification, container, false);
 
         btnPQRS = rootView.findViewById(R.id.btnComentarios);
-        btnReferencias = rootView.findViewById(R.id.btnReferencias);
+        //btnReferencias = rootView.findViewById(R.id.btnReferencias);
         btnSalir = rootView.findViewById(R.id.btnCerrar);
 
         btnPQRS.setOnClickListener(view -> {
@@ -33,12 +35,20 @@ public class NotificationFragment extends Fragment {
             startActivity(intent);
         });
 
-        btnReferencias.setOnClickListener(view -> {
-
-        });
 
         btnSalir.setOnClickListener(view -> {
-
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setTitle("Confirmación");
+            builder.setMessage("¿Estás seguro de que quieres salir?");
+            builder.setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    System.exit(0);
+                }
+            });
+            builder.setNegativeButton("No", null);
+            AlertDialog dialog = builder.create();
+            dialog.show();
         });
 
         return rootView;

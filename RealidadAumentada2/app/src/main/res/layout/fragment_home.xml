@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_fragment">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="735dp"
-        android:background="@color/Azul"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -34,7 +34,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:justificationMode="inter_word"
-            android:text="Conoce la nueva herramienta que te ayudará a comprender mejor el mundo de las antenas red"
+            android:text="Conoce la nueva herramienta que te ayudará a comprender mejor el mundo de las antenas de redes de comunicaciones"
             android:textColor="@color/white" />
 
 

@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.venta.realidadaumentada.fragments.NotasFragment;
@@ -19,6 +20,8 @@ public class FragmentsActivity extends AppCompatActivity {
     HomeFragment firstFragment = new HomeFragment();
     NotasFragment secondFragment = new NotasFragment();
     NotificationFragment thirdFragment = new NotificationFragment();
+    private static final long TIME_INTERVAL = 2000; // tiempo en milisegundos
+    private long backPressed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,5 +54,15 @@ public class FragmentsActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(android.R.id.content, fragment);
         transaction.commit();
+    }
+    @Override
+    public void onBackPressed() {
+        if (backPressed + TIME_INTERVAL > System.currentTimeMillis()) {
+            super.onBackPressed();
+            return;
+        } else {
+            Toast.makeText(getBaseContext(), "Presiona de nuevo para salir", Toast.LENGTH_SHORT).show();
+        }
+        backPressed = System.currentTimeMillis();
     }
 }

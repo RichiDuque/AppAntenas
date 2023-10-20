@@ -38,9 +38,17 @@ public class ComentarioActivity extends AppCompatActivity {
         btnSugerencia = findViewById(R.id.btnSugerencia);
 
         btnSugerencia.setOnClickListener(v -> {
-            enviarSugerencia(editTextComentario.getText().toString(),editTitleSug.getText().toString() );
-            Intent intent = new Intent(this, FragmentsActivity.class);
-            startActivity(intent);
+            String comentario = editTextComentario.getText().toString().trim();
+            String titulo = editTitleSug.getText().toString().trim();
+
+            if (!comentario.isEmpty() && !titulo.isEmpty()) {
+                enviarSugerencia(comentario, titulo);
+                finish();
+                Intent intent = new Intent(this, FragmentsActivity.class);
+                startActivity(intent);
+            } else {
+                Toast.makeText(ComentarioActivity.this, "Por favor complete ambos campos", Toast.LENGTH_SHORT).show();
+            }
         });
     }
     private void enviarSugerencia(String descripcion, String titulo) {

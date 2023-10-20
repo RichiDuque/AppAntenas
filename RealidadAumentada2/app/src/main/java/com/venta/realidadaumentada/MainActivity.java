@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btnComenzar = findViewById(R.id.btnComenzar);
 
         btnComenzar.setOnClickListener(view -> {
+            finish();
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         });

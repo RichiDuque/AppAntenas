@@ -4,13 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragmentsDocente.SugerenciasFragment">
+    tools:context=".fragmentsDocente.SugerenciasFragment"
+    android:background="@drawable/fondo_fragment">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="735dp"
-        android:background="@color/Azul"
+        android:layout_height="match_parent"
         android:padding="15dp">
 
         <TextView

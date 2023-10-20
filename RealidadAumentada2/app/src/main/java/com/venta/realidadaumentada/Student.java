@@ -5,9 +5,9 @@ import java.util.List;
 public class Student {
     private String name;
     private int codigoClase;
-    private List<Double> notas;
+    private List<String> notas;
 
-    public Student(String name, int codigoClase, List<Double> notas) {
+    public Student(String name, int codigoClase, List<String> notas) {
         this.name = name;
         this.codigoClase = codigoClase;
         this.notas = notas;
@@ -21,7 +21,7 @@ public class Student {
         return codigoClase;
     }
 
-    public List<Double> getNotas() {
+    public List<String> getNotas() {
         return notas;
     }
 }

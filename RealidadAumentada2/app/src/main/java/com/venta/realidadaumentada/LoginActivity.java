@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText editCodigo;
     private Button btnIngresar;
     TextView txtDocente;
-    private SharedPreferences sharedPreferences;
+    private SharedPreferences sharedPreferences, sharedPreferences2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,9 +46,13 @@ public class LoginActivity extends AppCompatActivity {
         txtDocente = findViewById(R.id.txtDocente);
 
         sharedPreferences = getSharedPreferences("Usuario", Context.MODE_PRIVATE);
+        sharedPreferences2 = getSharedPreferences("Notas", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreferences.Editor editor2 = sharedPreferences2.edit();
         editor.clear(); // Borra todos los datos en el SharedPreferences
+        editor2.clear();
         editor.apply();
+        editor2.apply();
 
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +62,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         txtDocente.setOnClickListener(view -> {
+            finish();
             Intent intent = new Intent(this, DocenteActivity.class);
             startActivity(intent);
         });
@@ -85,6 +90,8 @@ public class LoginActivity extends AppCompatActivity {
                                 if (codigoIngresado.equals(String.valueOf(codigoClase))) {
                                     // El código de clase es válido, puedes permitir el acceso
                                     // Por ejemplo, iniciar la siguiente actividad
+                                    Toast.makeText(LoginActivity.this, "Código Válido", Toast.LENGTH_SHORT).show();
+                                    finish();
                                     Intent intent = new Intent(LoginActivity.this, UserActivity.class);
                                     startActivity(intent);
                                     // Guarda el código de usuario en SharedPreferences

@@ -8,14 +8,14 @@
     android:background="@color/Azul">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="450dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         app:cardCornerRadius="35dp">
 
         <RelativeLayout
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true">
@@ -44,21 +44,26 @@
                 android:layout_centerHorizontal="true"
                 android:padding="5dp"
                 android:background="@drawable/footer_custom"
-                android:hint="Titulo de sugerencia" />
+                android:hint="Titulo de sugerencia"
+                android:maxLength="10"/>
 
             <EditText
                 android:id="@+id/editTextComentario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/editTitleSug"
-                android:layout_margin="10dp"
                 android:layout_centerHorizontal="true"
-                android:hint="Escribe aquí tus sugerencias"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/footer_custom"
-                android:padding="5dp"
+                android:gravity="start|top"
+                android:hint="Escribe aquí tus sugerencias"
                 android:inputType="textMultiLine"
                 android:minLines="12"
-                android:gravity="start|top" />
+                android:padding="5dp"
+                android:maxLength="100"/>
 
             <Button
                 android:id="@+id/btnSugerencia"
